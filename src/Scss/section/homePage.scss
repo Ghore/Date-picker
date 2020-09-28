@@ -1,0 +1,53 @@
+@import '../helpers//mixins.scss';
+@import '../helpers/variables.scss';
+
+.calendarWrapper {
+    margin: 0 auto;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../../image/Background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title {
+    @include font-settings(26px, 44px, 700);
+    font-family: $font-montserrat;
+    text-transform: uppercase;
+    color: $white;
+    padding-bottom: 40px;
+    text-align: center;
+    padding-top: 14px;
+
+}
+
+.titleSpan {
+    color: $yellow;
+}
+
+.container {
+    width: 320px;
+    margin: 0 auto;
+
+}
+
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 740px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        width: 100vw
+    }
+
+    .title {
+        @include font-settings(48px, 48px, 700);
+        position: relative;
+        top: 26vh;
+        left: 28vw;
+        width: 36vw;
+    }
+}

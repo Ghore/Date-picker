@@ -1,0 +1,78 @@
+@import '../helpers//mixins.scss';
+@import '../helpers/variables.scss';
+
+.month {
+    margin: 0 auto;
+}
+
+.daysWrapper {
+    color: $white;
+}
+
+.days {
+    @include font-settings(16px, 10px, 400);
+    font-family: $font-acrom;
+    padding: 12px;
+}
+
+.monthName {
+    @include font-settings(18px, 24px, 400);
+    font-family: $font-acrom;
+    color: $white;
+    border-bottom: solid 1px;
+    padding-bottom: 10px;
+    padding-top: 50px;
+}
+
+.dayWeeks {
+    color: $white;
+}
+
+.day {
+    border-top: solid 1px;
+    border-bottom: solid 1px;
+}
+
+.btnPrev {
+    @include font-settings(18px, 24px, 400);
+    background-color: initial;
+    color: $white;
+    position: relative;
+    right: 6vw;
+}
+
+.btnNext {
+    @include font-settings(18px, 24px, 400);
+    background-color: initial;
+    color: $white;
+    position: relative;
+    left: 6vw;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .month {
+        position: relative;
+        left: 30vw;
+        bottom: 10vh;
+    }
+
+    .monthName {
+        @include font-settings(22px, 28px, 700);
+        border-bottom: solid 2px;
+        padding-bottom: 10px;
+    }
+
+
+    .days {
+        @include font-settings(22px, 28px, 400);
+        font-family: $font-acrom;
+        padding: 12px;
+    }
+
+    .day {
+        @include font-settings(22px, 28px, 400);
+        font-family: $font-acrom;
+    }
+
+}

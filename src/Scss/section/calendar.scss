@@ -1,0 +1,30 @@
+@import '../helpers//mixins.scss';
+@import '../helpers/variables.scss';
+
+
+
+
+.calendarWrapper{
+
+}
+
+// .CalendarWrapper {
+//     position: relative;
+//     display: flex;
+//     flex-wrap: wrap;
+//         // left: 680px;
+//         // top: 90px;
+    
+// }
+.modalWrapper{
+    visibility: hidden;
+}
+.modalWrapperVisible{
+    visibility: visible;;
+}
+
+
+// h2 {
+//     color: lavender;
+// }
+

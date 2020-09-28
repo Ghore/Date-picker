@@ -1,0 +1,99 @@
+@import '../helpers//mixins.scss';
+@import '../helpers/variables.scss';
+
+.wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(77, 77, 77, 0.6);
+    position: absolute;
+    display: flex;
+    align-items: center;
+
+}
+
+.modal-body p {
+    @include font-settings(14px, 12px, 400);
+    font-family: $font-acrom;
+    border: solid yellow 2px;
+    padding: 6px 6px 6px 6px;
+}
+
+.modal-header p {
+    @include font-settings(14px, 12px, 400);
+    font-family: $font-acrom;
+    border: solid yellow 2px;
+    padding: 6px 6px 6px 6px;
+}
+
+.modal-body h3 {
+    @include font-settings(12px, 12px, 400);
+    font-family: $font-acrom;
+    color: $greyLigth;
+}
+
+
+.modal-header h3 {
+    @include font-settings(12px, 12px, 400);
+    font-family: $font-acrom;
+    color: $greyLigth;
+}
+
+
+.modal-dialog {
+    background-color: whitesmoke;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 5vh;
+    left: 36vw - 12vw;
+}
+
+.modal-content {
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+// .btnClose {
+//     position: relative;
+//     left: 3vw;
+// }
+
+
+@media screen and (min-width: 1024px) {
+    .container {
+        width: 100vw
+    }
+
+    .btnClose {
+        position: relative;
+        bottom: 10vh;
+        left: 5.5vw;
+    }
+
+    .modal-dialog {
+        width: 30vw;
+        top: 10vh;
+        left: 40vw - 10vw;
+    }
+
+    .modal-body p {
+        @include font-settings(24px, 24px, 400);
+    }
+
+    .modal-header p {
+        @include font-settings(24px, 24px, 400);
+    }
+
+    .modal-body h3 {
+        @include font-settings(24px, 24px, 400);
+    }
+
+    .modal-header h3 {
+        @include font-settings(24px, 24px, 400);
+    }
+}

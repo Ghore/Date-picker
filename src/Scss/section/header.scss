@@ -1,0 +1,42 @@
+    @import '../helpers//mixins.scss';
+    @import '../helpers/variables.scss';
+
+
+.nav {
+    padding: 8px 28px 6px 18px ;
+    // padding: 8px 58px 6px 18px ;
+    // padding-top: 8px;
+    // padding-bottom: 6px;
+    // padding-right: 68px;
+    // padding-left: 28px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+
+    &-item a{
+        @include font-settings ( 16px, 22px, 700);
+        font-family: $font-montserrat;
+        color: $greyDark;
+        text-transform: uppercase;
+        
+        
+    }
+
+    &-item a:hover{
+        color: $yellow;
+    }
+
+    &-item:first-child {
+        padding-right: 16px;
+        flex-grow: 1;
+    }
+
+    &-item:last-child {
+        white-space: nowrap;
+        padding-left: 34px;
+        // padding-left: 34px;
+    }
+
+}

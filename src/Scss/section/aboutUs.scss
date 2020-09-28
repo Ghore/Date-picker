@@ -1,0 +1,28 @@
+@import '../helpers//mixins.scss';
+@import '../helpers/variables.scss';
+
+.articleWrapper {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    margin: 0 auto;
+    padding-top: 26px;
+    padding-bottom: 26px;
+}
+
+.articleTitle {
+    @include font-settings(22px, 22px, 700);
+    font-family: $font-montserrat;
+    color: $greyDark;
+    padding-bottom: 38px;
+}
+
+
+
+.acticleListItem {
+    @include font-settings(16px, 18px, 400);
+    font-family: $font-montserrat;
+    color: $greyLigth;
+    width: 75vw;
+    padding-bottom: 22px;
+}

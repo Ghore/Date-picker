@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/date-picker/static/css/main.f8b133f1.chunk.css",
+    "main.js": "/date-picker/static/js/main.7ad17554.chunk.js",
+    "main.js.map": "/date-picker/static/js/main.7ad17554.chunk.js.map",
+    "runtime-main.js": "/date-picker/static/js/runtime-main.33e59597.js",
+    "runtime-main.js.map": "/date-picker/static/js/runtime-main.33e59597.js.map",
+    "static/js/2.056e0171.chunk.js": "/date-picker/static/js/2.056e0171.chunk.js",
+    "static/js/2.056e0171.chunk.js.map": "/date-picker/static/js/2.056e0171.chunk.js.map",
+    "index.html": "/date-picker/index.html",
+    "precache-manifest.1701e801224ff3b1b566f9cfe0fe28a7.js": "/date-picker/precache-manifest.1701e801224ff3b1b566f9cfe0fe28a7.js",
+    "service-worker.js": "/date-picker/service-worker.js",
+    "static/css/main.f8b133f1.chunk.css.map": "/date-picker/static/css/main.f8b133f1.chunk.css.map",
+    "static/js/2.056e0171.chunk.js.LICENSE.txt": "/date-picker/static/js/2.056e0171.chunk.js.LICENSE.txt",
+    "static/media/homePage.scss": "/date-picker/static/media/Background.37a75b54.jpg",
+    "static/media/Logo original RGB new.svg": "/date-picker/static/media/Logo original RGB new.64a84783.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.33e59597.js",
+    "static/js/2.056e0171.chunk.js",
+    "static/css/main.f8b133f1.chunk.css",
+    "static/js/main.7ad17554.chunk.js"
+  ]
+}

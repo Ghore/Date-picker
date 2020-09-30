@@ -39,6 +39,7 @@
     color: $white;
     position: relative;
     right: 6vw;
+    cursor: pointer;
 }
 
 .btnNext {
@@ -47,6 +48,7 @@
     color: $white;
     position: relative;
     left: 6vw;
+    cursor: pointer;
 }
 
 @media screen and (min-width: 1024px) {

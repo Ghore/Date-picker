@@ -36,6 +36,7 @@
 
 
 .modal-header h3 {
+    position: relative;
     @include font-settings(12px, 12px, 400);
     font-family: $font-acrom;
     color: $greyLigth;
@@ -58,21 +59,20 @@
     flex-wrap: wrap;
 }
 
-// .btnClose {
-//     position: relative;
-//     left: 3vw;
-// }
+.btnClose {
+    position: absolute;
+    right: 0;
+    top: 0;   
+    cursor: pointer;
+}
+.btnClose:hover {
+    background-color: $yellow;
+}
 
 
 @media screen and (min-width: 1024px) {
     .container {
         width: 100vw
-    }
-
-    .btnClose {
-        position: relative;
-        bottom: 10vh;
-        left: 5.5vw;
     }
 
     .modal-dialog {

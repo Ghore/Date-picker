@@ -1,0 +1,2721 @@
+
+<!DOCTYPE html>
+<html lang="ru" >
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>
+    React-Router – вопросы и ответы по программированию
+    
+</title>
+
+        <meta name="description" content="
+    Вопросы и ответы по программированию с меткой React-Router
+    
+    - отвечайте на вопросы по программированию на портале Progi.pro – на все есть ответ!
+">
+
+        <meta name="keywords" content="
+    react-router, ответ, вопрос
+">
+        <link rel="canonical" href="/react-router-t239" />
+
+        
+        
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-194x194.png" sizes="194x194">
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="apple-mobile-web-app-title" content="Progi.pro">
+<meta name="application-name" content="Progi.pro">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/core-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/enc-base64-min.js"></script>
+
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script src="/static/js/general.js"></script>
+<script src="/static/js/active_prevent_default.js"></script>
+<link href="/static/css/base.css?v=1.15" rel="stylesheet" type="text/css" />
+<link href="/static/css/misc.css?v=1.2" rel="stylesheet" type="text/css" />
+<link href="/static/css/navbar.css?v=1.1" rel="stylesheet" type="text/css" />
+<link href="/static/css/captcha.css" rel="stylesheet" type="text/css" />
+<link href="/static/css/tooltip.css?v=1.1" rel="stylesheet" type="text/css" />
+<script src="/static/js/utils.js"></script>
+        <script id="data" data-is-anonymous="True" data-login-url="L2xvZ2lu"></script>
+        <script>var login_to_js_object = {favorite:"0LTQvtCx0LDQstC70Y/RgtGMINCyINC40LfQsdGA0LDQvdC90L7QtQ==",comment:"0LrQvtC80LzQtdC90YLQuNGA0L7QstCw0YLRjA=="};</script>
+        <script src="/static/js/base.js?v=1.1"></script>
+        
+    <link href="/static/css/question_list.css" rel="stylesheet" type="text/css">
+    <script src="/static/js/question_list.js"></script>
+    
+        
+
+
+
+    <link rel="next" href="/react-router-t239/2">
+
+    
+
+        
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    </head>
+    <body id="top" >
+    
+
+        
+            <!-- Fixed navbar -->
+            <nav class="navbar navbar-default navbar-static z-top">
+              <div class="container">
+                
+                <div class="navbar-header hidden-xs">
+                    <a class="navbar-brand" href="/"><span class="glyphicon glyphicon-ok"></span></a>
+                </div>
+                    
+                    
+                    
+                      <ul class="nav navbar-nav navbar-right">
+                        
+                            <li id="top-menu-login-link-place">
+                                <div id="login-link" class="login b64-nav"><span class="glyphicon glyphicon-log-in"></span> <span class="login-text">Войти</span></div>
+                            </li>
+                        
+
+                          
+                      </ul>
+
+              </div>
+            </nav><!--/Fixed navbar-->
+        
+
+        
+            <div class="header-block">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+
+                                <div class="header-wrapper">
+
+                                    <div class="logo-block">
+                                        <a href="/"><img alt="Вопросы и ответы" src="/static/images/logo@2x.png" class="logo">
+                                        <div class="motto">progi<span class="dot">.</span>pro<div class="desc">все IT вопросы и ответы</div></div></a>
+                                    </div>
+
+                                    <div class="navigation">
+                                        <div class="navigation-wrapper">
+                                            
+                                                <a class="tags" href="/tags">Рубрики</a>
+                                            
+                                                <div data-url="L2Fzaw==" class="login-required b64-nav ask" data-next="L2Fzaw==" data-to="ask">Задать вопрос</div>
+                                        </div>
+                                    </div>
+
+                                    <div id="search-form-wrapper">
+                                        <form class="main-search" id="search-form" action="/search" method="get">
+                                            <div class="search">
+                                                <div class="button-wrapper">
+                                                    <button class="btn btn-default btn-search search" type="submit">
+                                                        <span class="glyphicon glyphicon-search search-icon"></span>
+                                                    </button>
+                                                </div>
+                                                <div class="input-wrapper">
+                                                    <input id="search" type="text" class="form-control-icon search" placeholder="Ваш вопрос" name="q" value="" />
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container content-block">
+                <div id="content" class="">
+                    <div class="row">
+                        <div class="col-md-12">
+
+                            
+                                
+                            
+
+                            <div class="content-wrapper clear-both" >
+                                
+    
+    <div class="row">
+        <div class="col-md-9 col mainbar">
+            
+
+    
+    <h1 class="sub-header">
+        React-Router – вопросы и ответы
+        
+    </h1>
+    
+
+
+
+
+    
+
+    <div>
+        <div class="question-list">
+            
+                
+
+
+<div class="question-card">
+    <a class="counter-block" href="/kak-otpravit-html-formu-bez-perenapravleniya-10527594">
+        <div class="votes">
+            <div class="value">98</div>
+            <div class="tip">голосов</div>
+        </div>
+        <div class="count positive solved">
+            <div class="value">1</div>
+            <div class="tip">ответ</div>
+        </div>
+    </a>
+    <div class="data-block">
+        <div class="subject">
+            <a href="/kak-otpravit-html-formu-bez-perenapravleniya-10527594">Как отправить HTML-форму без перенаправления?</a>
+        </div>
+        
+            <div class="snippet">
+                Я пишу веб-приложение для рендеринга на стороне клиента с помощью react и react-router для маршрутизации. Я выполнил поиск с input внутри form с react-bootstrap . executeSearch(){ ... window.locati...
+            </div>
+        
+        <div class="tag-list">
+            
+                <a class="tag" href="/reactjs-t238">
+                    reactjs
+                </a>
+            
+                <a class="tag" href="/html-t1">
+                    html
+                </a>
+            
+                <a class="tag" href="/javascript-t21">
+                    javascript
+                </a>
+            
+                <a class="tag" href="/react-router-t239">
+                    react-router
+                </a>
+            
+                <a class="tag" href="/forms-t247">
+                    forms
+                </a>
+            
+        </div>
+        <div class="date-author-block">
+            <span class="date">
+                
+                
+                    5 месяцев, 4 недели назад
+                
+            </span>
+            
+                <img src="https://www.gravatar.com/avatar/86f99225bcbf0948ae3728ee7d6e47fc?d=identicon" class="avatar"><a class="b64-nav" data-url="L3VzZXIxMDA5OTE=">itaied</a>
+            
+        </div>
+    </div>
+</div>
+
+            
+                
+
+
+<div class="question-card">
+    <a class="counter-block" href="/kak-protestirovat-reaktivniy-marshrutizator-s-fermentom-10558423">
+        <div class="votes">
+            <div class="value">137</div>
+            <div class="tip">голосов</div>
+        </div>
+        <div class="count positive solved">
+            <div class="value">2</div>
+            <div class="tip">ответа</div>
+        </div>
+    </a>
+    <div class="data-block">
+        <div class="subject">
+            <a href="/kak-protestirovat-reaktivniy-marshrutizator-s-fermentom-10558423">Как протестировать реактивный маршрутизатор с ферментом</a>
+        </div>
+        
+            <div class="snippet">
+                Я использую фермент + мокка + чай для тестирования моего проекта реакция-редукция. Фермент обеспечивает неглубокое тестирование поведения компонентов. Но я не нашел способ проверить маршрутизатор. ...
+            </div>
+        
+        <div class="tag-list">
+            
+                <a class="tag" href="/chai-t3964">
+                    chai
+                </a>
+            
+                <a class="tag" href="/react-router-t239">
+                    react-router
+                </a>
+            
+                <a class="tag" href="/mocha-t2575">
+                    mocha
+                </a>
+            
+                <a class="tag" href="/enzyme-t2396">
+                    enzyme
+                </a>
+            
+                <a class="tag" href="/reactjs-t238">
+                    reactjs
+                </a>
+            
+        </div>
+        <div class="date-author-block">
+            <span class="date">
+                
+                
+                    5 месяцев, 4 недели назад
+                
+            </span>
+            
+                <img src="https://www.gravatar.com/avatar/286a7c20005b24a0abdd1e21d3b94dd8?d=identicon" class="avatar"><a class="b64-nav" data-url="L3VzZXI0NTg3Mw==">Zhao Yi</a>
+            
+        </div>
+    </div>
+</div>
+
+            
+                
+
+
+<div class="question-card">
+    <a class="counter-block" href="/otnositelnaya-ssilka-na-marshrutizator-ne-pravilno-svyazana-10572516">
+        <div class="votes">
+            <div class="value">129</div>
+            <div class="tip">голосов</div>
+        </div>
+        <div class="count positive solved">
+            <div class="value">4</div>
+            <div class="tip">ответа</div>
+        </div>
+    </a>
+    <div class="data-block">
+        <div class="subject">
+            <a href="/otnositelnaya-ssilka-na-marshrutizator-ne-pravilno-svyazana-10572516">Относительная ссылка на маршрутизатор не правильно связана</a>
+        </div>
+        
+            <div class="snippet">
+                Итак, я использую npm-пакет response-router-relative ( https://www.npmjs.com/package/react-router-relative ), но он, похоже, не переключает url правильно. Вот как выглядят мои ссылки: &lt;Link to='...
+            </div>
+        
+        <div class="tag-list">
+            
+                <a class="tag" href="/reactjs-t238">
+                    reactjs
+                </a>
+            
+                <a class="tag" href="/javascript-t21">
+                    javascript
+                </a>
+            
+                <a class="tag" href="/react-router-t239">
+                    react-router
+                </a>
+            
+        </div>
+        <div class="date-author-block">
+            <span class="date">
+                
+                
+                    5 месяцев, 4 недели назад
+                
+            </span>
+            
+                <img src="https://www.gravatar.com/avatar/f96c6cefcf0a61c3aaa0925899317e70?d=identicon" class="avatar"><a class="b64-nav" data-url="L3VzZXIzODkxNw==">A. Lau</a>
+            
+        </div>
+    </div>
+</div>
+
+            
+                
+
+
+<div class="question-card">
+    <a class="counter-block" href="/react-router-ne-rabotaet-posle-obnovleniya-s-013-do-281-10572484">
+        <div class="votes">
+            <div class="value">69</div>
+            <div class="tip">голосов</div>
+        </div>
+        <div class="count positive solved">
+            <div class="value">2</div>
+            <div class="tip">ответа</div>
+        </div>
+    </a>
+    <div class="data-block">
+        <div class="subject">
+            <a href="/react-router-ne-rabotaet-posle-obnovleniya-s-013-do-281-10572484">React-router не работает после обновления с 0,13 до 2,8,1</a>
+        </div>
+        
+            <div class="snippet">
+                Я обновил свой реактивный маршрутизатор с версии 0.13 до 2.8.1. Затем он дает сообщение об ошибке "Не удалось загрузить ресурс: сервер ответил статусом 404 (не найден)". Это мой код. import React f...
+            </div>
+        
+        <div class="tag-list">
+            
+                <a class="tag" href="/reactjs-t238">
+                    reactjs
+                </a>
+            
+                <a class="tag" href="/react-router-t239">
+                    react-router
+                </a>
+            
+        </div>
+        <div class="date-author-block">
+            <span class="date">
+                
+                
+                    5 месяцев, 4 недели назад
+                
+            </span>
+            
+                <img src="https://www.gravatar.com/avatar/bc8d48045048f9c2e5925d1f82a5148b?d=identicon" class="avatar"><a class="b64-nav" data-url="L3VzZXIxMTg5NDM=">Shashika</a>
+            
+        </div>
+    </div>
+</div>
+
+            
+                
+
+
+<div class="question-card">
+    <a class="counter-block" href="/cikl-cherez-massiv-dlya-sozdaniya-marshrutov-v-marshrutizatore-reakcii-10562297">
+        <div class="votes">
+            <div class="value">79</div>
+            <div class="tip">голосов</div>
+        </div>
+        <div class="count positive solved">
+            <div class="value">1</div>
+            <div class="tip">ответ</div>
+        </div>
+    </a>
+    <div class="data-block">
+        <div class="subject">
+            <a href="/cikl-cherez-massiv-dlya-sozdaniya-marshrutov-v-marshrutizatore-reakcii-10562297">Цикл через массив для создания маршрутов в маршрутизаторе реакции</a>
+        </div>
+        
+            <div class="snippet">
+                Я хочу попасть в API, который возвращает мне все маршруты веб-сайта, которые мне понадобятся для реагирующего веб-сайта. Я не совсем уверен, как это сделать или даже Google. Мой код выглядит следую...
+            </div>
+        
+        <div class="tag-list">
+            
+                <a class="tag" href="/javascript-t21">
+                    javascript
+                </a>
+            
+                <a class="tag" href="/arrays-t153">
+                    arrays
+                </a>
+            
+                <a class="tag" href="/reactjs-t238">
+                    reactjs
+                </a>
+            
+                <a class="tag" href="/react-router-t239">
+                    react-router
+                </a>
+            
+        </div>
+        <div class="date-author-block">
+            <span class="date">
+                
+                
+                    5 месяцев, 4 недели назад
+                
+            </span>
+            
+                <img src="https://www.gravatar.com/avatar/8c4c16608b5f657d5d28fdca529e3cdd?d=identicon" class="avatar"><a class="b64-nav" data-url="L3VzZXIyNTU5MTc=">saunders</a>
+            
+        </div>
+    </div>
+</div>
+
+            
+                
+
+
+<div class="question-card">
+    <a class="counter-block" href="/pervonachalniy-povtorniy-rendering-brauzera-pri-asinhronnom-izvlechenii-dannih-10528432">
+        <div class="votes">
+            <div class="value">99</div>
+            <div class="tip">голосов</div>
+        </div>
+        <div class="count positive solved">
+            <div class="value">1</div>
+            <div class="tip">ответ</div>
+        </div>
+    </a>
+    <div class="data-block">
+        <div class="subject">
+            <a href="/pervonachalniy-povtorniy-rendering-brauzera-pri-asinhronnom-izvlechenii-dannih-10528432">Первоначальный повторный рендеринг браузера при асинхронном извлечении данных</a>
+        </div>
+        
+            <div class="snippet">
+                Я пытаюсь создать приложение/приложение React, которое использует рендеринг-маршрутизатор, "сокращение" и рендеринг на стороне сервера, и я не совсем понимаю, как иметь дело с первоначальной рендер...
+            </div>
+        
+        <div class="tag-list">
+            
+                <a class="tag" href="/redux-t2031">
+                    redux
+                </a>
+            
+                <a class="tag" href="/react-router-t239">
+                    react-router
+                </a>
+            
+                <a class="tag" href="/serverside-rendering-t8446">
+                    serverside-rendering
+                </a>
+            
+                <a class="tag" href="/reactjs-t238">
+                    reactjs
+                </a>
+            
+        </div>
+        <div class="date-author-block">
+            <span class="date">
+                
+                
+                    5 месяцев, 4 недели назад
+                
+            </span>
+            
+                <img src="https://www.gravatar.com/avatar/e008f2ff8777bcf012487019b1cd6bf6?d=identicon" class="avatar"><a class="b64-nav" data-url="L3VzZXIzMzMzNzIx">denisftw</a>
+            
+        </div>
+    </div>
+</div>
+
+            
+                
+
+
+<div class="question-card">
+    <a class="counter-block" href="/reakciya-s-redux-i-router-ne-komponent-renderinga-10558474">
+        <div class="votes">
+            <div class="value">70</div>
+            <div class="tip">голосов</div>
+        </div>
+        <div class="count positive solved">
+            <div class="value">1</div>
+            <div class="tip">ответ</div>
+        </div>
+    </a>
+    <div class="data-block">
+        <div class="subject">
+            <a href="/reakciya-s-redux-i-router-ne-komponent-renderinga-10558474">Реакция с Redux и Router - не компонент рендеринга</a>
+        </div>
+        
+            <div class="snippet">
+                Я не понимаю, почему компонент Sample не является рендерингом вообще. Url изменяется, никаких ошибок в консоли, однако компонент не установлен. Независимо от того, является ли это функциональным ко...
+            </div>
+        
+        <div class="tag-list">
+            
+                <a class="tag" href="/react-redux-t2032">
+                    react-redux
+                </a>
+            
+                <a class="tag" href="/reactjs-t238">
+                    reactjs
+                </a>
+            
+                <a class="tag" href="/javascript-t21">
+                    javascript
+                </a>
+            
+                <a class="tag" href="/react-router-t239">
+                    react-router
+                </a>
+            
+        </div>
+        <div class="date-author-block">
+            <span class="date">
+                
+                
+                    5 месяцев, 4 недели назад
+                
+            </span>
+            
+                <img src="https://www.gravatar.com/avatar/da672d53e230b499634b87b16419f64c?d=identicon" class="avatar"><a class="b64-nav" data-url="L3VzZXIxODU0MDg=">Signum</a>
+            
+        </div>
+    </div>
+</div>
+
+            
+                
+
+
+<div class="question-card">
+    <a class="counter-block" href="/reabilitaciya-marshrutizatora-10551569">
+        <div class="votes">
+            <div class="value">89</div>
+            <div class="tip">голосов</div>
+        </div>
+        <div class="count positive solved">
+            <div class="value">1</div>
+            <div class="tip">ответ</div>
+        </div>
+    </a>
+    <div class="data-block">
+        <div class="subject">
+            <a href="/reabilitaciya-marshrutizatora-10551569">Реабилитация маршрутизатора</a>
+        </div>
+        
+            <div class="snippet">
+                Я новичок в ReactJS, и я изучаю, как использовать маршрутизатор реакции для маршрутизации, но документация с реакцией -маршрутизатором была тольк
+            </div>
+        
+        <div class="tag-list">
+            
+                <a class="tag" href="/react-router-t239">
+                    react-router
+                </a>
+            
+                <a class="tag" href="/reactjs-t238">
+                    reactjs
+                </a>
+            
+        </div>
+        <div class="date-author-block">
+            <span class="date">
+                
+                
+                    5 месяцев, 4 недели назад
+                
+            </span>
+            
+                <img src="https://www.gravatar.com/avatar/d0f39a76f4f59c088a9a6dd8d5559eba?d=identicon" class="avatar"><a class="b64-nav" data-url="L3VzZXIxMzk3NDY=">Daniel Barde</a>
+            
+        </div>
+    </div>
+</div>
+
+            
+                
+
+
+<div class="question-card">
+    <a class="counter-block" href="/reagirovat-marshrutizator-s-url-s-servera-ne-sootvetstvuyushego-kornyu-10573862">
+        <div class="votes">
+            <div class="value">82</div>
+            <div class="tip">голоса</div>
+        </div>
+        <div class="count positive solved">
+            <div class="value">1</div>
+            <div class="tip">ответ</div>
+        </div>
+    </a>
+    <div class="data-block">
+        <div class="subject">
+            <a href="/reagirovat-marshrutizator-s-url-s-servera-ne-sootvetstvuyushego-kornyu-10573862">реагировать маршрутизатор с url с сервера, не соответствующего корню</a>
+        </div>
+        
+            <div class="snippet">
+                У меня настроен экспресс-сервер, который перенаправляет пользователя на следующий URL-адрес. http://localhost:3000/#/user/access_token=***refresh_token=*** Проблема, с которой я сталкиваюсь, заключ...
+            </div>
+        
+        <div class="tag-list">
+            
+                <a class="tag" href="/reactjs-t238">
+                    reactjs
+                </a>
+            
+                <a class="tag" href="/react-router-t239">
+                    react-router
+                </a>
+            
+                <a class="tag" href="/javascript-t21">
+                    javascript
+                </a>
+            
+        </div>
+        <div class="date-author-block">
+            <span class="date">
+                
+                
+                    5 месяцев, 4 недели назад
+                
+            </span>
+            
+                <img src="https://www.gravatar.com/avatar/717d8b3d60d9eea997b35b02b6a4e867?d=identicon" class="avatar"><a class="b64-nav" data-url="L3VzZXI1MQ==">user4910881</a>
+            
+        </div>
+    </div>
+</div>
+
+            
+                
+
+
+<div class="question-card">
+    <a class="counter-block" href="/komponent-switch-react-router-ne-peredaet-komponenti-s-odnim-i-tem-zhe-putem-10547845">
+        <div class="votes">
+            <div class="value">58</div>
+            <div class="tip">голосов</div>
+        </div>
+        <div class="count positive solved">
+            <div class="value">2</div>
+            <div class="tip">ответа</div>
+        </div>
+    </a>
+    <div class="data-block">
+        <div class="subject">
+            <a href="/komponent-switch-react-router-ne-peredaet-komponenti-s-odnim-i-tem-zhe-putem-10547845">Компонент Switch React-Router не передает компоненты с одним и тем же путем</a>
+        </div>
+        
+            <div class="snippet">
+                Недавно я реализовал компонент Switch-переключателя-ответчика в своих маршрутах, чтобы отобразить компонент NoMatch (который является всего лишь компонентом ошибки 404). Однако после реализации это...
+            </div>
+        
+        <div class="tag-list">
+            
+                <a class="tag" href="/reactjs-t238">
+                    reactjs
+                </a>
+            
+                <a class="tag" href="/react-router-t239">
+                    react-router
+                </a>
+            
+        </div>
+        <div class="date-author-block">
+            <span class="date">
+                
+                
+                    5 месяцев, 4 недели назад
+                
+            </span>
+            
+                <img src="https://www.gravatar.com/avatar/1c3476b0b572ce8c227b1c16c4ae6d40?d=identicon" class="avatar"><a class="b64-nav" data-url="L3VzZXI1Njg5MTU=">Phillip</a>
+            
+        </div>
+    </div>
+</div>
+
+            
+                
+
+
+<div class="question-card">
+    <a class="counter-block" href="/reagirovat-na-retranslyaciyu-routera-dlya-detey-10534928">
+        <div class="votes">
+            <div class="value">89</div>
+            <div class="tip">голосов</div>
+        </div>
+        <div class="count positive solved">
+            <div class="value">1</div>
+            <div class="tip">ответ</div>
+        </div>
+    </a>
+    <div class="data-block">
+        <div class="subject">
+            <a href="/reagirovat-na-retranslyaciyu-routera-dlya-detey-10534928">реагировать на ретрансляцию роутера для детей</a>
+        </div>
+        
+            <div class="snippet">
+                Я видел вопрос о stackoverflow и других ресурсах, но все же я не вижу четкого ответа. Почему я не могу передать реквизиты детям в ответном маршрутизаторе? Реакция стоит на том столпе прохождения оп...
+            </div>
+        
+        <div class="tag-list">
+            
+                <a class="tag" href="/react-router-t239">
+                    react-router
+                </a>
+            
+        </div>
+        <div class="date-author-block">
+            <span class="date">
+                
+                
+                    5 месяцев, 4 недели назад
+                
+            </span>
+            
+                <img src="https://www.gravatar.com/avatar/e1b69a4bd183567926b564e641b9badf?d=identicon" class="avatar"><a class="b64-nav" data-url="L3VzZXIxMDA3NzIz">Igor Chernega</a>
+            
+        </div>
+    </div>
+</div>
+
+            
+                
+
+
+<div class="question-card">
+    <a class="counter-block" href="/komponent-ne-importiruetsya-v-prilozhenie-10580283">
+        <div class="votes">
+            <div class="value">91</div>
+            <div class="tip">голос</div>
+        </div>
+        <div class="count positive solved">
+            <div class="value">1</div>
+            <div class="tip">ответ</div>
+        </div>
+    </a>
+    <div class="data-block">
+        <div class="subject">
+            <a href="/komponent-ne-importiruetsya-v-prilozhenie-10580283">Компонент не импортируется в приложение.</a>
+        </div>
+        
+            <div class="snippet">
+                Я создаю простое приложение React, которое по умолчанию создает фид статей статьи, но также, используя react-router , может вытаскивать похожие списки. Проблема в том, что я не могу импортировать к...
+            </div>
+        
+        <div class="tag-list">
+            
+                <a class="tag" href="/ecmascript-6-t1457">
+                    ecmascript-6
+                </a>
+            
+                <a class="tag" href="/react-router-t239">
+                    react-router
+                </a>
+            
+                <a class="tag" href="/reactjs-t238">
+                    reactjs
+                </a>
+            
+        </div>
+        <div class="date-author-block">
+            <span class="date">
+                
+                
+                    5 месяцев, 4 недели назад
+                
+            </span>
+            
+                <img src="https://www.gravatar.com/avatar/24aa8cb5ee77f180e6563abfbbe978df?d=identicon" class="avatar"><a class="b64-nav" data-url="L3VzZXI0MjMwNzc=">zahabba</a>
+            
+        </div>
+    </div>
+</div>
+
+            
+                
+
+
+<div class="question-card">
+    <a class="counter-block" href="/keycloak-zashishaet-tolko-opredelennie-marshruti-storona-klienta-10536784">
+        <div class="votes">
+            <div class="value">70</div>
+            <div class="tip">голосов</div>
+        </div>
+        <div class="count positive solved">
+            <div class="value">1</div>
+            <div class="tip">ответ</div>
+        </div>
+    </a>
+    <div class="data-block">
+        <div class="subject">
+            <a href="/keycloak-zashishaet-tolko-opredelennie-marshruti-storona-klienta-10536784">Keycloak защищает только определенные маршруты [Сторона клиента]</a>
+        </div>
+        
+            <div class="snippet">
+                Я применил проверку keycloak с моим приложением ReactJS. Currenly все мои маршруты защищены следующим образом. keyCloak.init({ onLoad: 'login-required', checkLoginIframe: false }).success(authentic...
+            </div>
+        
+        <div class="tag-list">
+            
+                <a class="tag" href="/reactjs-t238">
+                    reactjs
+                </a>
+            
+                <a class="tag" href="/react-router-t239">
+                    react-router
+                </a>
+            
+                <a class="tag" href="/openid-connect-t7431">
+                    openid-connect
+                </a>
+            
+                <a class="tag" href="/keycloak-t6390">
+                    keycloak
+                </a>
+            
+        </div>
+        <div class="date-author-block">
+            <span class="date">
+                
+                
+                    5 месяцев, 4 недели назад
+                
+            </span>
+            
+                <img src="https://www.gravatar.com/avatar/822526d544d2cf4b3a6af84fc50f4294?d=identicon" class="avatar"><a class="b64-nav" data-url="L3VzZXI2MDQyMDQ=">kokilayaa</a>
+            
+        </div>
+    </div>
+</div>
+
+            
+                
+
+
+<div class="question-card">
+    <a class="counter-block" href="/react-router-aws-backend-kak-seo-10550011">
+        <div class="votes">
+            <div class="value">107</div>
+            <div class="tip">голосов</div>
+        </div>
+        <div class="count positive solved">
+            <div class="value">3</div>
+            <div class="tip">ответа</div>
+        </div>
+    </a>
+    <div class="data-block">
+        <div class="subject">
+            <a href="/react-router-aws-backend-kak-seo-10550011">React Router + AWS Backend, как SEO</a>
+        </div>
+        
+            <div class="snippet">
+                Я использую React and React Router в своем одностраничном веб-приложении. Поскольку я выполняю рендеринг на стороне клиента, я хотел бы обслуживать все мои статические файлы (HTML, CSS, JS) с CDN. ...
+            </div>
+        
+        <div class="tag-list">
+            
+                <a class="tag" href="/amazon-s3-t486">
+                    amazon-s3
+                </a>
+            
+                <a class="tag" href="/amazon-cloudfront-t7820">
+                    amazon-cloudfront
+                </a>
+            
+                <a class="tag" href="/react-router-t239">
+                    react-router
+                </a>
+            
+                <a class="tag" href="/seo-t1458">
+                    seo
+                </a>
+            
+        </div>
+        <div class="date-author-block">
+            <span class="date">
+                
+                
+                    5 месяцев, 4 недели назад
+                
+            </span>
+            
+                <img src="https://www.gravatar.com/avatar/afe92a04547e0707a1e620139762e1d3?d=identicon" class="avatar"><a class="b64-nav" data-url="L3VzZXIyMzc1NDY=">Andrew Rasmussen</a>
+            
+        </div>
+    </div>
+</div>
+
+            
+                
+
+
+<div class="question-card">
+    <a class="counter-block" href="/napravlyayte-programmno-v-prilozhenie-react-redux-ispolzuya-typesript-10534248">
+        <div class="votes">
+            <div class="value">98</div>
+            <div class="tip">голосов</div>
+        </div>
+        <div class="count positive solved">
+            <div class="value">1</div>
+            <div class="tip">ответ</div>
+        </div>
+    </a>
+    <div class="data-block">
+        <div class="subject">
+            <a href="/napravlyayte-programmno-v-prilozhenie-react-redux-ispolzuya-typesript-10534248">Направляйте программно в приложение react-redux, используя typesript</a>
+        </div>
+        
+            <div class="snippet">
+                Его часы я не нахожу способ или хорошую документацию, которая может показать мне, как перейти на любую страницу программно. Вот мой вариант использования: у меня есть форма входа в систему, как тол...
+            </div>
+        
+        <div class="tag-list">
+            
+                <a class="tag" href="/react-router-t239">
+                    react-router
+                </a>
+            
+                <a class="tag" href="/react-redux-t2032">
+                    react-redux
+                </a>
+            
+                <a class="tag" href="/reactjs-t238">
+                    reactjs
+                </a>
+            
+                <a class="tag" href="/redux-t2031">
+                    redux
+                </a>
+            
+        </div>
+        <div class="date-author-block">
+            <span class="date">
+                
+                
+                    5 месяцев, 4 недели назад
+                
+            </span>
+            
+                <img src="https://www.gravatar.com/avatar/ab106f38604c9bde5c1957446fa8cc50?d=identicon" class="avatar"><a class="b64-nav" data-url="L3VzZXIzODQxMzQ=">Dheeraj Agrawal</a>
+            
+        </div>
+    </div>
+</div>
+
+            
+                
+
+
+<div class="question-card">
+    <a class="counter-block" href="/kogda-gde-chitat-parametri-react-router-dlya-izvlecheniya-dannih-v-rekviziti-10557698">
+        <div class="votes">
+            <div class="value">81</div>
+            <div class="tip">голос</div>
+        </div>
+        <div class="count positive solved">
+            <div class="value">2</div>
+            <div class="tip">ответа</div>
+        </div>
+    </a>
+    <div class="data-block">
+        <div class="subject">
+            <a href="/kogda-gde-chitat-parametri-react-router-dlya-izvlecheniya-dannih-v-rekviziti-10557698">Когда (где) читать параметры React router для извлечения данных в реквизиты?</a>
+        </div>
+        
+            <div class="snippet">
+                У меня есть React route: &lt;Route path='/contract/:id' component={ContractForm}/&gt; и я хотел бы прочитать значение этого параметра id в моем компоненте ContractForm для извлечения данных из базы...
+            </div>
+        
+        <div class="tag-list">
+            
+                <a class="tag" href="/react-router-v4-t4406">
+                    react-router-v4
+                </a>
+            
+                <a class="tag" href="/rest-t213">
+                    rest
+                </a>
+            
+                <a class="tag" href="/routing-t985">
+                    routing
+                </a>
+            
+                <a class="tag" href="/react-router-t239">
+                    react-router
+                </a>
+            
+                <a class="tag" href="/reactjs-t238">
+                    reactjs
+                </a>
+            
+        </div>
+        <div class="date-author-block">
+            <span class="date">
+                
+                
+                    5 месяцев, 4 недели назад
+                
+            </span>
+            
+                <img src="https://www.gravatar.com/avatar/3cca7b1a7c2b5a0943f4e936b7d86aba?d=identicon" class="avatar"><a class="b64-nav" data-url="L3VzZXI1MDAwNQ==">TomR</a>
+            
+        </div>
+    </div>
+</div>
+
+            
+                
+
+
+<div class="question-card">
+    <a class="counter-block" href="/kak-ispravit-dublirovanieudalenie-dannih-pri-nazhatii-knopok-nazadvpered-v-reagiruyushem-marshrutizatore-10533049">
+        <div class="votes">
+            <div class="value">57</div>
+            <div class="tip">голосов</div>
+        </div>
+        <div class="count positive solved">
+            <div class="value">1</div>
+            <div class="tip">ответ</div>
+        </div>
+    </a>
+    <div class="data-block">
+        <div class="subject">
+            <a href="/kak-ispravit-dublirovanieudalenie-dannih-pri-nazhatii-knopok-nazadvpered-v-reagiruyushem-marshrutizatore-10533049">Как исправить дублирование/удаление данных при нажатии кнопок назад/вперед в реагирующем маршрутизаторе</a>
+        </div>
+        
+            <div class="snippet">
+                Я создаю движущееся веб-приложение со следующими отношениями: У ПОЛЬЗОВАТЕЛЯ есть много ДВИЖЕНИЙ → У ДВИЖЕНИЯ есть много КОРОБК → У КОРОБКИ есть много ТОВАРОВ. У меня есть функционал, работающий та...
+            </div>
+        
+        <div class="tag-list">
+            
+                <a class="tag" href="/react-router-t239">
+                    react-router
+                </a>
+            
+                <a class="tag" href="/reactjs-t238">
+                    reactjs
+                </a>
+            
+                <a class="tag" href="/ruby-on-rails-t64">
+                    ruby-on-rails
+                </a>
+            
+                <a class="tag" href="/redux-t2031">
+                    redux
+                </a>
+            
+                <a class="tag" href="/react-redux-t2032">
+                    react-redux
+                </a>
+            
+        </div>
+        <div class="date-author-block">
+            <span class="date">
+                
+                
+                    5 месяцев, 4 недели назад
+                
+            </span>
+            
+                <img src="https://www.gravatar.com/avatar/8f82a1ac8dc09fe337f1701078a6ec7d?d=identicon" class="avatar"><a class="b64-nav" data-url="L3VzZXIxNTUwNjU4">Ali Stone</a>
+            
+        </div>
+    </div>
+</div>
+
+            
+                
+
+
+<div class="question-card">
+    <a class="counter-block" href="/oshibka-react-router-vizov-proptypes-napryamuyu-ne-podderzhivaetsya-10538183">
+        <div class="votes">
+            <div class="value">71</div>
+            <div class="tip">голос</div>
+        </div>
+        <div class="count positive solved">
+            <div class="value">3</div>
+            <div class="tip">ответа</div>
+        </div>
+    </a>
+    <div class="data-block">
+        <div class="subject">
+            <a href="/oshibka-react-router-vizov-proptypes-napryamuyu-ne-podderzhivaetsya-10538183">Ошибка React (Router): &quot;Вызов PropTypes напрямую не поддерживается...&quot;</a>
+        </div>
+        
+            <div class="snippet">
+                Просто начал изучать React, и я следую руководству по созданию базового одностраничного приложения. Я получаю эту ошибку: Warning: Failed context type: Calling PropTypes validators directly is not ...
+            </div>
+        
+        <div class="tag-list">
+            
+                <a class="tag" href="/reactjs-t238">
+                    reactjs
+                </a>
+            
+                <a class="tag" href="/javascript-t21">
+                    javascript
+                </a>
+            
+                <a class="tag" href="/react-router-t239">
+                    react-router
+                </a>
+            
+        </div>
+        <div class="date-author-block">
+            <span class="date">
+                
+                
+                    5 месяцев, 4 недели назад
+                
+            </span>
+            
+                <img src="https://www.gravatar.com/avatar/f01bbeaa2306408e2ed82f1a6ef224cc?d=identicon" class="avatar"><a class="b64-nav" data-url="L3VzZXI0Mjc0ODk=">DAnsermino</a>
+            
+        </div>
+    </div>
+</div>
+
+            
+                
+
+
+<div class="question-card">
+    <a class="counter-block" href="/reagirovat-post-na-node-server-i-obrabativat-otvet-json-10528837">
+        <div class="votes">
+            <div class="value">80</div>
+            <div class="tip">голосов</div>
+        </div>
+        <div class="count positive solved">
+            <div class="value">2</div>
+            <div class="tip">ответа</div>
+        </div>
+    </a>
+    <div class="data-block">
+        <div class="subject">
+            <a href="/reagirovat-post-na-node-server-i-obrabativat-otvet-json-10528837">Реагировать POST на Node Сервер и обрабатывать ответ JSON</a>
+        </div>
+        
+            <div class="snippet">
+                Я новичок в React, поэтому я пытаюсь понять, как все это работает вместе. Есть ли способ изменить компонент, который выполняет рендеринг для другого компонента после получения статуса 200 с сервера...
+            </div>
+        
+        <div class="tag-list">
+            
+                <a class="tag" href="/nodejs-t43">
+                    node.js
+                </a>
+            
+                <a class="tag" href="/reactjs-t238">
+                    reactjs
+                </a>
+            
+                <a class="tag" href="/react-router-t239">
+                    react-router
+                </a>
+            
+                <a class="tag" href="/express-t244">
+                    express
+                </a>
+            
+                <a class="tag" href="/javascript-t21">
+                    javascript
+                </a>
+            
+        </div>
+        <div class="date-author-block">
+            <span class="date">
+                
+                
+                    5 месяцев, 4 недели назад
+                
+            </span>
+            
+                <img src="https://www.gravatar.com/avatar/7e6b9165260735205b97c4b1f0d2ff16?d=identicon" class="avatar"><a class="b64-nav" data-url="L3VzZXI4OTY4ODk=">Brian</a>
+            
+        </div>
+    </div>
+</div>
+
+            
+                
+
+
+<div class="question-card">
+    <a class="counter-block" href="/reagirovat-marshrutizator-ne-pererisovivaya-konteyner-marshruta-posle-obnovleniya-parametrov-zaprosa-10574363">
+        <div class="votes">
+            <div class="value">90</div>
+            <div class="tip">голосов</div>
+        </div>
+        <div class="count positive solved">
+            <div class="value">1</div>
+            <div class="tip">ответ</div>
+        </div>
+    </a>
+    <div class="data-block">
+        <div class="subject">
+            <a href="/reagirovat-marshrutizator-ne-pererisovivaya-konteyner-marshruta-posle-obnovleniya-parametrov-zaprosa-10574363">Реагировать маршрутизатор, не перерисовывая контейнер маршрута после обновления параметров запроса</a>
+        </div>
+        
+            <div class="snippet">
+                Здесь у меня есть /products/mobile маршрут После нажатия на фильтр я делаю route.push с помощью реакции-router-redux
+            </div>
+        
+        <div class="tag-list">
+            
+                <a class="tag" href="/react-router-t239">
+                    react-router
+                </a>
+            
+                <a class="tag" href="/redux-t2031">
+                    redux
+                </a>
+            
+                <a class="tag" href="/reactjs-t238">
+                    reactjs
+                </a>
+            
+                <a class="tag" href="/javascript-t21">
+                    javascript
+                </a>
+            
+        </div>
+        <div class="date-author-block">
+            <span class="date">
+                
+                
+                    5 месяцев, 4 недели назад
+                
+            </span>
+            
+                <img src="https://www.gravatar.com/avatar/2eda0146c4c91f3aa00756b27f314508?d=identicon" class="avatar"><a class="b64-nav" data-url="L3VzZXIxMTIxMTY=">Akash Shinde</a>
+            
+        </div>
+    </div>
+</div>
+
+            
+                
+
+
+<div class="question-card">
+    <a class="counter-block" href="/asinhronnie-reagiruyushie-marshruti-i-beskonechniy-cikl-10575633">
+        <div class="votes">
+            <div class="value">57</div>
+            <div class="tip">голосов</div>
+        </div>
+        <div class="count positive solved">
+            <div class="value">1</div>
+            <div class="tip">ответ</div>
+        </div>
+    </a>
+    <div class="data-block">
+        <div class="subject">
+            <a href="/asinhronnie-reagiruyushie-marshruti-i-beskonechniy-cikl-10575633">Асинхронные реагирующие маршруты и бесконечный цикл</a>
+        </div>
+        
+            <div class="snippet">
+                Я решил использовать загрузку асинхронного маршрутизатора, и я создал HOC следующим образом: const asyncComponent = (importComponent) =&gt; { return class extends React.Component { state = { compon...
+            </div>
+        
+        <div class="tag-list">
+            
+                <a class="tag" href="/redux-t2031">
+                    redux
+                </a>
+            
+                <a class="tag" href="/reactjs-t238">
+                    reactjs
+                </a>
+            
+                <a class="tag" href="/react-redux-t2032">
+                    react-redux
+                </a>
+            
+                <a class="tag" href="/react-router-t239">
+                    react-router
+                </a>
+            
+        </div>
+        <div class="date-author-block">
+            <span class="date">
+                
+                
+                    5 месяцев, 4 недели назад
+                
+            </span>
+            
+                <img src="https://www.gravatar.com/avatar/2d9d537b46cca7b6df5f47aa37d5c8bf?d=identicon" class="avatar"><a class="b64-nav" data-url="L3VzZXI4MjEwMjI=">Владимир Вячеславович</a>
+            
+        </div>
+    </div>
+</div>
+
+            
+                
+
+
+<div class="question-card">
+    <a class="counter-block" href="/povtornoe-prilozhenie-vozvrashayushee-500-vnutrennyaya-oshibka-servera-10526427">
+        <div class="votes">
+            <div class="value">68</div>
+            <div class="tip">голосов</div>
+        </div>
+        <div class="count positive solved">
+            <div class="value">2</div>
+            <div class="tip">ответа</div>
+        </div>
+    </a>
+    <div class="data-block">
+        <div class="subject">
+            <a href="/povtornoe-prilozhenie-vozvrashayushee-500-vnutrennyaya-oshibka-servera-10526427">Повторное приложение, возвращающее 500 Внутренняя ошибка сервера</a>
+        </div>
+        
+            <div class="snippet">
+                У меня есть приложение для реагирования, созданное с помощью приложения create-react-app. После запуска npm run build и развертывания приложения в качестве статического сайта все работает, за исклю...
+            </div>
+        
+        <div class="tag-list">
+            
+                <a class="tag" href="/javascript-t21">
+                    javascript
+                </a>
+            
+                <a class="tag" href="/reactjs-t238">
+                    reactjs
+                </a>
+            
+                <a class="tag" href="/create-react-app-t7472">
+                    create-react-app
+                </a>
+            
+                <a class="tag" href="/react-router-t239">
+                    react-router
+                </a>
+            
+        </div>
+        <div class="date-author-block">
+            <span class="date">
+                
+                
+                    5 месяцев, 4 недели назад
+                
+            </span>
+            
+                <img src="https://www.gravatar.com/avatar/c4a200c9e8308b2cf206c7a806b15ebe?d=identicon" class="avatar"><a class="b64-nav" data-url="L3VzZXI4MjE2MTA=">Junior</a>
+            
+        </div>
+    </div>
+</div>
+
+            
+                
+
+
+<div class="question-card">
+    <a class="counter-block" href="/sohranyat-parametri-zaprosa-v-interaktivnom-marshrutizatore-10552106">
+        <div class="votes">
+            <div class="value">107</div>
+            <div class="tip">голосов</div>
+        </div>
+        <div class="count positive solved">
+            <div class="value">2</div>
+            <div class="tip">ответа</div>
+        </div>
+    </a>
+    <div class="data-block">
+        <div class="subject">
+            <a href="/sohranyat-parametri-zaprosa-v-interaktivnom-marshrutizatore-10552106">Сохранять параметры запроса в интерактивном маршрутизаторе</a>
+        </div>
+        
+            <div class="snippet">
+                В моем приложении для реагирования у меня есть несколько параметров, которые пользователь приходит в приложение, которые предоставляют некоторую информацию о том, откуда они пришли. Есть ли способ ...
+            </div>
+        
+        <div class="tag-list">
+            
+                <a class="tag" href="/react-router-t239">
+                    react-router
+                </a>
+            
+                <a class="tag" href="/reactjs-t238">
+                    reactjs
+                </a>
+            
+        </div>
+        <div class="date-author-block">
+            <span class="date">
+                
+                
+                    5 месяцев, 4 недели назад
+                
+            </span>
+            
+                <img src="https://www.gravatar.com/avatar/d6d8503e0f671265db684813187699ae?d=identicon" class="avatar"><a class="b64-nav" data-url="L3VzZXI0NjQ3Njg=">ThrowsException</a>
+            
+        </div>
+    </div>
+</div>
+
+            
+                
+
+
+<div class="question-card">
+    <a class="counter-block" href="/react-thispropstitle-null-zachem-10552454">
+        <div class="votes">
+            <div class="value">110</div>
+            <div class="tip">голосов</div>
+        </div>
+        <div class="count positive solved">
+            <div class="value">1</div>
+            <div class="tip">ответ</div>
+        </div>
+    </a>
+    <div class="data-block">
+        <div class="subject">
+            <a href="/react-thispropstitle-null-zachem-10552454">React this.props.title null! Зачем?</a>
+        </div>
+        
+            <div class="snippet">
+                У меня 3 состояния (статус, название, танец) Я использую реактивный маршрутизатор, переключатель реакции, React.cloneElement. App.jsx var React = require('react'); var io = require('socket.io-clien...
+            </div>
+        
+        <div class="tag-list">
+            
+                <a class="tag" href="/javascript-t21">
+                    javascript
+                </a>
+            
+                <a class="tag" href="/reactjs-t238">
+                    reactjs
+                </a>
+            
+                <a class="tag" href="/react-router-t239">
+                    react-router
+                </a>
+            
+                <a class="tag" href="/jsx-t4115">
+                    jsx
+                </a>
+            
+        </div>
+        <div class="date-author-block">
+            <span class="date">
+                
+                
+                    5 месяцев, 4 недели назад
+                
+            </span>
+            
+                <img src="https://www.gravatar.com/avatar/344b99511161fa59b5ccb663bb2098c3?d=identicon" class="avatar"><a class="b64-nav" data-url="L3VzZXIzMTQ2ODMz">Mick</a>
+            
+        </div>
+    </div>
+</div>
+
+            
+                
+
+
+<div class="question-card">
+    <a class="counter-block" href="/vlozhenniy-marshrut-s-ispolzovaniem-getcomponent-ne-otobrazhaet-10526809">
+        <div class="votes">
+            <div class="value">81</div>
+            <div class="tip">голос</div>
+        </div>
+        <div class="count positive solved">
+            <div class="value">1</div>
+            <div class="tip">ответ</div>
+        </div>
+    </a>
+    <div class="data-block">
+        <div class="subject">
+            <a href="/vlozhenniy-marshrut-s-ispolzovaniem-getcomponent-ne-otobrazhaet-10526809">Вложенный маршрут с использованием getComponent не отображает</a>
+        </div>
+        
+            <div class="snippet">
+                Я создаю приложение React с настройкой react-router 3.x следующим образом: &lt;Route component={Global}&gt; &lt;Route path="/" getComponent={(loc, cb) =&gt; loadRoute('Home', cb)} /&gt; &lt;Route p...
+            </div>
+        
+        <div class="tag-list">
+            
+                <a class="tag" href="/reactjs-t238">
+                    reactjs
+                </a>
+            
+                <a class="tag" href="/react-router-t239">
+                    react-router
+                </a>
+            
+        </div>
+        <div class="date-author-block">
+            <span class="date">
+                
+                
+                    5 месяцев, 4 недели назад
+                
+            </span>
+            
+                <img src="https://www.gravatar.com/avatar/b25db8c17db03aa8fe8bf3fb1d8f157b?d=identicon" class="avatar"><a class="b64-nav" data-url="L3VzZXIxMjcxNDA4">Dan Bovey</a>
+            
+        </div>
+    </div>
+</div>
+
+            
+                
+
+
+<div class="question-card">
+    <a class="counter-block" href="/komponent-sozdanniy-route-predostavlyayushiy-instrender-ne-yavlyaetsya-funkciey-oshibki-10544420">
+        <div class="votes">
+            <div class="value">57</div>
+            <div class="tip">голосов</div>
+        </div>
+        <div class="count positive solved">
+            <div class="value">1</div>
+            <div class="tip">ответ</div>
+        </div>
+    </a>
+    <div class="data-block">
+        <div class="subject">
+            <a href="/komponent-sozdanniy-route-predostavlyayushiy-instrender-ne-yavlyaetsya-funkciey-oshibki-10544420">Компонент (созданный Route), предоставляющий inst.render, не является функцией ошибки</a>
+        </div>
+        
+            <div class="snippet">
+                У меня есть компонент PrivateRoute, который пытается отобразить компонент следующим образом: import React, { Component } from 'react'; import { Route, Redirect } from 'react-router-dom'; const Priv...
+            </div>
+        
+        <div class="tag-list">
+            
+                <a class="tag" href="/react-router-t239">
+                    react-router
+                </a>
+            
+                <a class="tag" href="/javascript-t21">
+                    javascript
+                </a>
+            
+                <a class="tag" href="/reactjs-t238">
+                    reactjs
+                </a>
+            
+        </div>
+        <div class="date-author-block">
+            <span class="date">
+                
+                
+                    5 месяцев, 4 недели назад
+                
+            </span>
+            
+                <img src="https://www.gravatar.com/avatar/162c015567d6fb95bde7ea1200b634ff?d=identicon" class="avatar"><a class="b64-nav" data-url="L3VzZXI3MDMzNzE=">hxuanhung</a>
+            
+        </div>
+    </div>
+</div>
+
+            
+                
+
+
+<div class="question-card">
+    <a class="counter-block" href="/reagirovat-ne-na-komponent-renderinga-marshrutizatora-10571229">
+        <div class="votes">
+            <div class="value">100</div>
+            <div class="tip">голосов</div>
+        </div>
+        <div class="count positive solved">
+            <div class="value">1</div>
+            <div class="tip">ответ</div>
+        </div>
+    </a>
+    <div class="data-block">
+        <div class="subject">
+            <a href="/reagirovat-ne-na-komponent-renderinga-marshrutizatora-10571229">Реагировать не на компонент рендеринга маршрутизатора</a>
+        </div>
+        
+            <div class="snippet">
+                Мы используем react-router следующим образом: ReactDOM.render( &lt;Router&gt; &lt;Route path="/" component={AnyPic}&gt; &lt;Route path="p/:photoId" component={PhotoView} /&gt; &lt;/Route&gt; &lt;/R...
+            </div>
+        
+        <div class="tag-list">
+            
+                <a class="tag" href="/reactjs-t238">
+                    reactjs
+                </a>
+            
+                <a class="tag" href="/react-router-t239">
+                    react-router
+                </a>
+            
+                <a class="tag" href="/javascript-t21">
+                    javascript
+                </a>
+            
+        </div>
+        <div class="date-author-block">
+            <span class="date">
+                
+                
+                    5 месяцев, 4 недели назад
+                
+            </span>
+            
+                <img src="https://www.gravatar.com/avatar/1870dcca6573f0b9bf6df14dc71a4693?d=identicon" class="avatar"><a class="b64-nav" data-url="L3VzZXI2NzExOQ==">Carpetfizz</a>
+            
+        </div>
+    </div>
+</div>
+
+            
+                
+
+
+<div class="question-card">
+    <a class="counter-block" href="/reaktivniy-marshrutizator-20-ne-marshrutiziruet-10564959">
+        <div class="votes">
+            <div class="value">71</div>
+            <div class="tip">голос</div>
+        </div>
+        <div class="count positive solved">
+            <div class="value">3</div>
+            <div class="tip">ответа</div>
+        </div>
+    </a>
+    <div class="data-block">
+        <div class="subject">
+            <a href="/reaktivniy-marshrutizator-20-ne-marshrutiziruet-10564959">Реактивный маршрутизатор 2.0 не маршрутизирует</a>
+        </div>
+        
+            <div class="snippet">
+                У меня есть этот простой код, который не работает. Я взял его со страницы проекта "Реактивный маршрутизатор" и немного изменил его, чтобы он выглядел немного лучше. Настроить У меня есть несколько ...
+            </div>
+        
+        <div class="tag-list">
+            
+                <a class="tag" href="/javascript-t21">
+                    javascript
+                </a>
+            
+                <a class="tag" href="/reactjs-t238">
+                    reactjs
+                </a>
+            
+                <a class="tag" href="/react-router-t239">
+                    react-router
+                </a>
+            
+        </div>
+        <div class="date-author-block">
+            <span class="date">
+                
+                
+                    5 месяцев, 4 недели назад
+                
+            </span>
+            
+                <img src="https://www.gravatar.com/avatar/35f8593a180984734257d6f7100d644e?d=identicon" class="avatar"><a class="b64-nav" data-url="L3VzZXI5NzI0MzU=">yurart</a>
+            
+        </div>
+    </div>
+</div>
+
+            
+                
+
+
+<div class="question-card">
+    <a class="counter-block" href="/pochemu-rekvizit-komponenta-retranslyatora-ne-vklyuchaet-istoriyu-10521333">
+        <div class="votes">
+            <div class="value">119</div>
+            <div class="tip">голосов</div>
+        </div>
+        <div class="count positive solved">
+            <div class="value">1</div>
+            <div class="tip">ответ</div>
+        </div>
+    </a>
+    <div class="data-block">
+        <div class="subject">
+            <a href="/pochemu-rekvizit-komponenta-retranslyatora-ne-vklyuchaet-istoriyu-10521333">Почему реквизит компонента-ретранслятора не включает историю?</a>
+        </div>
+        
+            <div class="snippet">
+                Я люблю v4, но в 4.1.2 это меня отключает при использовании маршрутизатора браузера: С компонентом компонента Route у меня есть эти реквизиты: {computedMatch, location, path} хотя в документации мн...
+            </div>
+        
+        <div class="tag-list">
+            
+                <a class="tag" href="/react-router-t239">
+                    react-router
+                </a>
+            
+                <a class="tag" href="/react-router-v4-t4406">
+                    react-router-v4
+                </a>
+            
+        </div>
+        <div class="date-author-block">
+            <span class="date">
+                
+                
+                    5 месяцев, 4 недели назад
+                
+            </span>
+            
+                <img src="https://www.gravatar.com/avatar/a96caa3e5b0c90bcf06b4d410a84e7ea?d=identicon" class="avatar"><a class="b64-nav" data-url="L3VzZXI3OTQ2Mw==">Paul Whipp</a>
+            
+        </div>
+    </div>
+</div>
+
+            
+                
+
+
+<div class="question-card">
+    <a class="counter-block" href="/marshrut-na-druguyu-stranicu-response-router-v4-10539274">
+        <div class="votes">
+            <div class="value">69</div>
+            <div class="tip">голосов</div>
+        </div>
+        <div class="count positive solved">
+            <div class="value">2</div>
+            <div class="tip">ответа</div>
+        </div>
+    </a>
+    <div class="data-block">
+        <div class="subject">
+            <a href="/marshrut-na-druguyu-stranicu-response-router-v4-10539274">Маршрут на другую страницу [response-router v4]</a>
+        </div>
+        
+            <div class="snippet">
+                Я использую для этого маршрутизатор v4. Существует сценарий, когда при нажатии на продукты я хочу показывать продукты только под баннером, но при нажатии на клик, вместо того, чтобы показывать его ...
+            </div>
+        
+        <div class="tag-list">
+            
+                <a class="tag" href="/reactjs-t238">
+                    reactjs
+                </a>
+            
+                <a class="tag" href="/react-router-t239">
+                    react-router
+                </a>
+            
+                <a class="tag" href="/javascript-t21">
+                    javascript
+                </a>
+            
+        </div>
+        <div class="date-author-block">
+            <span class="date">
+                
+                
+                    5 месяцев, 4 недели назад
+                
+            </span>
+            
+                <img src="https://www.gravatar.com/avatar/0434a62dec42875b2965da0fa0ab5d61?d=identicon" class="avatar"><a class="b64-nav" data-url="L3VzZXIyNjA4NTU=">Serenity</a>
+            
+        </div>
+    </div>
+</div>
+
+            
+                
+
+
+<div class="question-card">
+    <a class="counter-block" href="/react-router-dom-vozvrashaet-pustuyu-stranicu-pri-perehode-na-konkretniy-marshrut-10559012">
+        <div class="votes">
+            <div class="value">113</div>
+            <div class="tip">голосов</div>
+        </div>
+        <div class="count positive solved">
+            <div class="value">3</div>
+            <div class="tip">ответа</div>
+        </div>
+    </a>
+    <div class="data-block">
+        <div class="subject">
+            <a href="/react-router-dom-vozvrashaet-pustuyu-stranicu-pri-perehode-na-konkretniy-marshrut-10559012">React Router Dom возвращает пустую страницу при переходе на конкретный маршрут</a>
+        </div>
+        
+            <div class="snippet">
+                когда я перенаправляюсь к компоненту-брату, URL-адрес изменяется в браузере, и появляется пустая страница, которая возвращается. когда я пытаюсь перейти к компоненту напрямую через url, все равно д...
+            </div>
+        
+        <div class="tag-list">
+            
+                <a class="tag" href="/javascript-t21">
+                    javascript
+                </a>
+            
+                <a class="tag" href="/react-router-t239">
+                    react-router
+                </a>
+            
+                <a class="tag" href="/reactjs-t238">
+                    reactjs
+                </a>
+            
+        </div>
+        <div class="date-author-block">
+            <span class="date">
+                
+                
+                    5 месяцев, 4 недели назад
+                
+            </span>
+            
+                <img src="https://www.gravatar.com/avatar/0558395a25db028d11443d5d90739069?d=identicon" class="avatar"><a class="b64-nav" data-url="L3VzZXI0OTk5OA==">ankur</a>
+            
+        </div>
+    </div>
+</div>
+
+            
+                
+
+
+<div class="question-card">
+    <a class="counter-block" href="/povtorno-ustanovit-komponent-povtornogo-montirovaniya-pri-izmenenii-marshruta-10545425">
+        <div class="votes">
+            <div class="value">99</div>
+            <div class="tip">голосов</div>
+        </div>
+        <div class="count positive solved">
+            <div class="value">3</div>
+            <div class="tip">ответа</div>
+        </div>
+    </a>
+    <div class="data-block">
+        <div class="subject">
+            <a href="/povtorno-ustanovit-komponent-povtornogo-montirovaniya-pri-izmenenii-marshruta-10545425">Повторно установить компонент повторного монтирования при изменении маршрута</a>
+        </div>
+        
+            <div class="snippet">
+                Как повторно смонтировать компонент при изменении маршрута при использовании одного и того же компонента для обоих маршрутов? Вот мой код. routes.jsx &lt;Router history={browserHistory}&gt; &lt;Rou...
+            </div>
+        
+        <div class="tag-list">
+            
+                <a class="tag" href="/react-router-t239">
+                    react-router
+                </a>
+            
+                <a class="tag" href="/reactjs-t238">
+                    reactjs
+                </a>
+            
+        </div>
+        <div class="date-author-block">
+            <span class="date">
+                
+                
+                    6 месяцев назад
+                
+            </span>
+            
+                <img src="https://www.gravatar.com/avatar/5a706118a6a7ecc975a3909ed4f1f524?d=identicon" class="avatar"><a class="b64-nav" data-url="L3VzZXIyMzg5NTQ=">SGS Venkatesh</a>
+            
+        </div>
+    </div>
+</div>
+
+            
+                
+
+
+<div class="question-card">
+    <a class="counter-block" href="/marshrutizator-marshrutizator-routerpush-ne-zapuskaet-komponentwillmount-10560459">
+        <div class="votes">
+            <div class="value">98</div>
+            <div class="tip">голосов</div>
+        </div>
+        <div class="count positive solved">
+            <div class="value">1</div>
+            <div class="tip">ответ</div>
+        </div>
+    </a>
+    <div class="data-block">
+        <div class="subject">
+            <a href="/marshrutizator-marshrutizator-routerpush-ne-zapuskaet-komponentwillmount-10560459">маршрутизатор-маршрутизатор router.push не запускает компонентWillMount</a>
+        </div>
+        
+            <div class="snippet">
+                У меня проблема с реактивным маршрутизатором. Я нахожусь на странице "/portal/clients//systems//configure", и я хочу изменить страницу на "/portal/clients//systems" при удалении системы. Я использу...
+            </div>
+        
+        <div class="tag-list">
+            
+                <a class="tag" href="/javascript-t21">
+                    javascript
+                </a>
+            
+                <a class="tag" href="/react-router-t239">
+                    react-router
+                </a>
+            
+                <a class="tag" href="/reactjs-t238">
+                    reactjs
+                </a>
+            
+        </div>
+        <div class="date-author-block">
+            <span class="date">
+                
+                
+                    6 месяцев назад
+                
+            </span>
+            
+                <img src="https://www.gravatar.com/avatar/0d3090b88fd0970f9283663527ae5482?d=identicon" class="avatar"><a class="b64-nav" data-url="L3VzZXIyOTQ0MDcz">Ryan Ragle</a>
+            
+        </div>
+    </div>
+</div>
+
+            
+                
+
+
+<div class="question-card">
+    <a class="counter-block" href="/react-router-kak-avtomaticheski-peredat-tekushiy-parametr-v-link-10568618">
+        <div class="votes">
+            <div class="value">69</div>
+            <div class="tip">голосов</div>
+        </div>
+        <div class="count positive solved">
+            <div class="value">1</div>
+            <div class="tip">ответ</div>
+        </div>
+    </a>
+    <div class="data-block">
+        <div class="subject">
+            <a href="/react-router-kak-avtomaticheski-peredat-tekushiy-parametr-v-link-10568618">React-Router - как автоматически передать текущий параметр в &quot; &lt;link&gt; &quot;?</a>
+        </div>
+        
+            <div class="snippet">
+                Используя response-Router, я хочу, чтобы первый токен моих URL-адресов был языком, который будет использовать сайт (английский, французский, испанский и т.д.) Для целей интернационализации. Наприме...
+            </div>
+        
+        <div class="tag-list">
+            
+                <a class="tag" href="/react-router-t239">
+                    react-router
+                </a>
+            
+                <a class="tag" href="/reactjs-t238">
+                    reactjs
+                </a>
+            
+        </div>
+        <div class="date-author-block">
+            <span class="date">
+                
+                
+                    6 месяцев назад
+                
+            </span>
+            
+                <img src="https://www.gravatar.com/avatar/26649edb1f6e89e82f859a01e28dbbf1?d=identicon" class="avatar"><a class="b64-nav" data-url="L3VzZXI2MDgwNw==">electrotype</a>
+            
+        </div>
+    </div>
+</div>
+
+            
+                
+
+
+<div class="question-card">
+    <a class="counter-block" href="/obyavlyat-komponent-dlya-vseh-marshrutov-reaktivnogo-marshrutizatora-10457164">
+        <div class="votes">
+            <div class="value">72</div>
+            <div class="tip">голоса</div>
+        </div>
+        <div class="count positive solved">
+            <div class="value">1</div>
+            <div class="tip">ответ</div>
+        </div>
+    </a>
+    <div class="data-block">
+        <div class="subject">
+            <a href="/obyavlyat-komponent-dlya-vseh-marshrutov-reaktivnogo-marshrutizatora-10457164">объявлять компонент для всех маршрутов реактивного маршрутизатора</a>
+        </div>
+        
+            <div class="snippet">
+                У меня есть заголовок и внутри него. У меня есть компоненты Link для навигации по любым страницам, и заголовок должен отображаться на всех маршрутах, я помещаю компонент Header внутри метода switch...
+            </div>
+        
+        <div class="tag-list">
+            
+                <a class="tag" href="/reactjs-t238">
+                    reactjs
+                </a>
+            
+                <a class="tag" href="/react-router-t239">
+                    react-router
+                </a>
+            
+        </div>
+        <div class="date-author-block">
+            <span class="date">
+                
+                
+                    6 месяцев назад
+                
+            </span>
+            
+                <img src="https://www.gravatar.com/avatar/22734389c697cc7c76a5c4a802365f5b?d=identicon" class="avatar"><a class="b64-nav" data-url="L3VzZXI4MzE1OA==">Davi Resio</a>
+            
+        </div>
+    </div>
+</div>
+
+            
+                
+
+
+<div class="question-card">
+    <a class="counter-block" href="/ne-udalos-realizovat-leftnav-s-komponentom-appbar-v-materiale-ui-10494036">
+        <div class="votes">
+            <div class="value">114</div>
+            <div class="tip">голосов</div>
+        </div>
+        <div class="count positive solved">
+            <div class="value">1</div>
+            <div class="tip">ответ</div>
+        </div>
+    </a>
+    <div class="data-block">
+        <div class="subject">
+            <a href="/ne-udalos-realizovat-leftnav-s-komponentom-appbar-v-materiale-ui-10494036">Не удалось реализовать Leftnav с компонентом AppBar в материале-ui</a>
+        </div>
+        
+            <div class="snippet">
+                У меня много проблем с попыткой реализовать material-ui AppBar с помощью Leftbar, поскольку, похоже, существует множество различных вариантов синтаксиса компонентов и импорта зависимостей компонент...
+            </div>
+        
+        <div class="tag-list">
+            
+                <a class="tag" href="/react-router-t239">
+                    react-router
+                </a>
+            
+                <a class="tag" href="/appbar-t10205">
+                    appbar
+                </a>
+            
+                <a class="tag" href="/reactjs-t238">
+                    reactjs
+                </a>
+            
+        </div>
+        <div class="date-author-block">
+            <span class="date">
+                
+                
+                    6 месяцев назад
+                
+            </span>
+            
+                <img src="https://www.gravatar.com/avatar/47a9debf54b6e5387d66fdbef5933ac3?d=identicon" class="avatar"><a class="b64-nav" data-url="L3VzZXI2MjI0Nw==">HGB</a>
+            
+        </div>
+    </div>
+</div>
+
+            
+                
+
+
+<div class="question-card">
+    <a class="counter-block" href="/razvertivanie-na-lazuri-s-pomoshyu-prilozheniya-create-response-app-10485921">
+        <div class="votes">
+            <div class="value">71</div>
+            <div class="tip">голос</div>
+        </div>
+        <div class="count positive solved">
+            <div class="value">1</div>
+            <div class="tip">ответ</div>
+        </div>
+    </a>
+    <div class="data-block">
+        <div class="subject">
+            <a href="/razvertivanie-na-lazuri-s-pomoshyu-prilozheniya-create-response-app-10485921">Развертывание на лазури с помощью приложения create-response-app</a>
+        </div>
+        
+            <div class="snippet">
+                Я использую приложение create-response для разработки моего приложения React. Теперь я хочу опубликовать пакет в облаке. Так я и сделал: npm run build он создал папку build которой я инициализирова...
+            </div>
+        
+        <div class="tag-list">
+            
+                <a class="tag" href="/git-t264">
+                    git
+                </a>
+            
+                <a class="tag" href="/reactjs-t238">
+                    reactjs
+                </a>
+            
+                <a class="tag" href="/react-router-t239">
+                    react-router
+                </a>
+            
+                <a class="tag" href="/azure-t1095">
+                    azure
+                </a>
+            
+        </div>
+        <div class="date-author-block">
+            <span class="date">
+                
+                
+                    6 месяцев назад
+                
+            </span>
+            
+                <img src="https://www.gravatar.com/avatar/4a95f6c847bc3520d687b908b4b76b32?d=identicon" class="avatar"><a class="b64-nav" data-url="L3VzZXIyMzQ2NTQ=">FacundoGFlores</a>
+            
+        </div>
+    </div>
+</div>
+
+            
+                
+
+
+<div class="question-card">
+    <a class="counter-block" href="/sluzhit-druguyu-otdelnuyu-stranicu-ili-staticheskiy-fayl-na-veb-sayte-sozdanniy-s-pomoshyu-reakcii-10486598">
+        <div class="votes">
+            <div class="value">173</div>
+            <div class="tip">голоса</div>
+        </div>
+        <div class="count positive solved">
+            <div class="value">2</div>
+            <div class="tip">ответа</div>
+        </div>
+    </a>
+    <div class="data-block">
+        <div class="subject">
+            <a href="/sluzhit-druguyu-otdelnuyu-stranicu-ili-staticheskiy-fayl-na-veb-sayte-sozdanniy-s-pomoshyu-reakcii-10486598">Служить другую (отдельную) страницу или статический файл на веб-сайте, созданный с помощью реакции</a>
+        </div>
+        
+            <div class="snippet">
+                У меня есть сайт, созданный с помощью реакции, в котором используется реакция-маршрутизатор. Для некоторого маршрута я хочу обслуживать другую страницу или статический файл, но поскольку весь запро...
+            </div>
+        
+        <div class="tag-list">
+            
+                <a class="tag" href="/apache-t615">
+                    apache
+                </a>
+            
+                <a class="tag" href="/javascript-t21">
+                    javascript
+                </a>
+            
+                <a class="tag" href="/react-router-t239">
+                    react-router
+                </a>
+            
+                <a class="tag" href="/reactjs-t238">
+                    reactjs
+                </a>
+            
+        </div>
+        <div class="date-author-block">
+            <span class="date">
+                
+                
+                    6 месяцев назад
+                
+            </span>
+            
+                <img src="https://www.gravatar.com/avatar/36a3d0be5badeea5d73e63a85057a4be?d=identicon" class="avatar"><a class="b64-nav" data-url="L3VzZXIzMjY2OTg=">Abhishek</a>
+            
+        </div>
+    </div>
+</div>
+
+            
+                
+
+
+<div class="question-card">
+    <a class="counter-block" href="/otobrazhenie-na-storone-servera-dlya-opredelennogo-vibora-10497703">
+        <div class="votes">
+            <div class="value">71</div>
+            <div class="tip">голос</div>
+        </div>
+        <div class="count positive solved">
+            <div class="value">2</div>
+            <div class="tip">ответа</div>
+        </div>
+    </a>
+    <div class="data-block">
+        <div class="subject">
+            <a href="/otobrazhenie-na-storone-servera-dlya-opredelennogo-vibora-10497703">Отображение на стороне сервера для определенного выбора</a>
+        </div>
+        
+            <div class="snippet">
+                Скажем, мое приложение представляет собой список многих предметов. Там много элементов, поэтому я не хочу включать все элементы в состоянии redux. Когда пользователь посещает меня на myapp.com/item...
+            </div>
+        
+        <div class="tag-list">
+            
+                <a class="tag" href="/reactjs-t238">
+                    reactjs
+                </a>
+            
+                <a class="tag" href="/redux-t2031">
+                    redux
+                </a>
+            
+                <a class="tag" href="/react-router-t239">
+                    react-router
+                </a>
+            
+        </div>
+        <div class="date-author-block">
+            <span class="date">
+                
+                
+                    6 месяцев назад
+                
+            </span>
+            
+                <img src="https://www.gravatar.com/avatar/0142e89d5e8065e64c42233d3b2d7e28?d=identicon" class="avatar"><a class="b64-nav" data-url="L3VzZXIxODE3NTMz">Daniel</a>
+            
+        </div>
+    </div>
+</div>
+
+            
+                
+
+
+<div class="question-card">
+    <a class="counter-block" href="/perenapravlenie-na-predidushiy-put-pri-vhode-v-sistemu-react-router-v4-10501975">
+        <div class="votes">
+            <div class="value">69</div>
+            <div class="tip">голосов</div>
+        </div>
+        <div class="count positive solved">
+            <div class="value">1</div>
+            <div class="tip">ответ</div>
+        </div>
+    </a>
+    <div class="data-block">
+        <div class="subject">
+            <a href="/perenapravlenie-na-predidushiy-put-pri-vhode-v-sistemu-react-router-v4-10501975">Перенаправление на предыдущий путь при входе в систему - React Router v4</a>
+        </div>
+        
+            <div class="snippet">
+                Я использую реактивный маршрутизатор v4 и пытаюсь реализовать функциональность, независимо от того, на какой маршрут нажимает пользователь, он попадает на страницу входа в систему, то есть, если он...
+            </div>
+        
+        <div class="tag-list">
+            
+                <a class="tag" href="/react-router-t239">
+                    react-router
+                </a>
+            
+                <a class="tag" href="/reactjs-t238">
+                    reactjs
+                </a>
+            
+                <a class="tag" href="/authentication-t513">
+                    authentication
+                </a>
+            
+        </div>
+        <div class="date-author-block">
+            <span class="date">
+                
+                
+                    6 месяцев назад
+                
+            </span>
+            
+                <img src="https://www.gravatar.com/avatar/b7b4771b184b95bf034bfca9dccff344?d=identicon" class="avatar"><a class="b64-nav" data-url="L3VzZXIxODU4MzU=">faraz</a>
+            
+        </div>
+    </div>
+</div>
+
+            
+        </div>
+
+        
+            <ul class="pagination">
+                
+
+    <li class="active"><span>1</span></li>
+
+    <li><a href="/react-router-t239/2">2</a></li>
+
+    <li><a href="/react-router-t239/5">5</a></li>
+
+    <li><a href="/react-router-t239/8">8</a></li>
+
+    <li><a href="/react-router-t239/11">11</a></li>
+
+    <li><a href="/react-router-t239/14">14</a></li>
+
+    <li><a href="/react-router-t239/17">17</a></li>
+
+    <li><a href="/react-router-t239/20">20</a></li>
+
+    <li><a href="/react-router-t239/23">23</a></li>
+
+    <li><a href="/react-router-t239/26">26</a></li>
+
+    <li><a href="/react-router-t239/29">29</a></li>
+
+    <li><a href="/react-router-t239/32">32</a></li>
+
+    <li><a href="/react-router-t239/35">35</a></li>
+
+    <li><a href="/react-router-t239/38">38</a></li>
+
+    <li><a href="/react-router-t239/41">41</a></li>
+
+    <li><a href="/react-router-t239/44">44</a></li>
+
+    <li><a href="/react-router-t239/47">47</a></li>
+
+    <li><a href="/react-router-t239/50">50</a></li>
+
+    <li><a href="/react-router-t239/53">53</a></li>
+
+    <li><a href="/react-router-t239/56">56</a></li>
+
+    <li><a href="/react-router-t239/59">59</a></li>
+
+    <li><a href="/react-router-t239/62">62</a></li>
+
+    <li><a href="/react-router-t239/65">65</a></li>
+
+    <li><a href="/react-router-t239/68">68</a></li>
+
+    <li><a href="/react-router-t239/71">71</a></li>
+
+    <li><a href="/react-router-t239/74">74</a></li>
+
+    <li><a href="/react-router-t239/77">77</a></li>
+
+    <li><a href="/react-router-t239/80">80</a></li>
+
+    <li><a href="/react-router-t239/83">83</a></li>
+
+    <li><a href="/react-router-t239/86">86</a></li>
+
+    <li><a href="/react-router-t239/89">89</a></li>
+
+    <li><a href="/react-router-t239/92">92</a></li>
+
+    <li><a href="/react-router-t239/95">95</a></li>
+
+    <li><a href="/react-router-t239/98">98</a></li>
+
+    <li><a href="/react-router-t239/101">101</a></li>
+
+
+    <li><a href="/react-router-t239/2">Next</a></li>
+
+
+            </ul>
+        
+    </div>
+
+
+
+    
+
+
+        </div>
+        <div class="col-md-3 col sidebar">
+
+            
+
+
+
+            
+
+
+
+            
+    <div class="categories">
+        <h4>Рубрики</h4>
+        
+            
+                <a class="category category-tag" href="/javascript-t21">Javascript</a>
+            
+        
+            
+                <a class="category category-tag" href="/java-t15">Java</a>
+            
+        
+            
+                <a class="category category-tag" href="/c-t78">C#</a>
+            
+        
+            
+                <a class="category category-tag" href="/php-t48">Php</a>
+            
+        
+            
+                <a class="category category-tag" href="/android-t32">Android</a>
+            
+        
+            
+                <a class="category category-tag" href="/python-t6">Python</a>
+            
+        
+            
+                <a class="category category-tag" href="/jquery-t22">Jquery</a>
+            
+        
+            
+                <a class="category category-tag" href="/html-t1">Html</a>
+            
+        
+            
+                <a class="category category-tag" href="/c-t119">C++</a>
+            
+        
+            
+                <a class="category category-tag" href="/ios-t82">Ios</a>
+            
+        
+            
+                <a class="category category-tag" href="/css-t2">Css</a>
+            
+        
+            
+                <a class="category category-tag" href="/mysql-t190">Mysql</a>
+            
+        
+            
+                <a class="category category-tag" href="/sql-t63">Sql</a>
+            
+        
+            
+                <a class="category category-tag" href="/aspnet-t105">Asp.net</a>
+            
+        
+            
+                <a class="category category-tag" href="/ruby-on-rails-t64">Ruby-on-rails</a>
+            
+        
+            
+                <a class="category category-tag" href="/c-t136">C</a>
+            
+        
+            
+                <a class="category category-tag" href="/arrays-t153">Arrays</a>
+            
+        
+            
+                <a class="category category-tag" href="/objective-c-t408">Objective-c</a>
+            
+        
+            
+                <a class="category category-tag" href="/net-t35">.net</a>
+            
+        
+            
+                <a class="category category-tag" href="/r-t117">R</a>
+            
+        
+        <a class="category category-all" href="/tags">Все рубрики <span class="fa fa-long-arrow-right"></span></a>
+    </div>
+
+
+            
+
+
+        </div>
+    </div>
+
+                            </div>
+
+                            <div id="breadcrumbs"><ol class="breadcrumb">
+        <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/" itemprop="url"><span itemprop="title">Вопросы</span></a></li>
+        <li class="active">React-Router</li>
+</ol></div><!--/breadcrumbs-->
+
+                        </div>
+                    </div><!--/.row-->
+                </div>
+            </div><!--/.container-->
+
+            <div class="footer-block home">
+                <div class="container">
+                    <div id="footer" class="row">
+                        <div class="col-md-12">
+                            <div class="footer-wrapper">
+                                
+    <div class="menu">
+        <a href="/info/terms-of-service">Условия использования</a>
+        <a href="/info/privacy-policy">Политика конфиденциальности</a>
+        <a href="/feedback">Обратная связь</a>
+    </div>
+
+    <div id="о-нас">
+        <div class="header">О нас</div>
+        <div class="description">
+            <p>
+                Progi.pro – один из крупнейших сервисов вопросов и ответов по программированию.
+                У нас вы можете найти вопросы по языкам программирования Javascript, PHP, Java, C#, Python и многим другим.
+            </p>
+            <p>
+                А так же делитесь знаниями, знакомьтесь с новыми утилитами и приложениями, учитесь у
+                всегда готовых помочь ответить на самые сложные вопросы во всех сферах IT и программирования.
+                Станьте гуру и экспертом разработки ПО, получите признание коллег, заработайте репутацию,
+                создайте стартап или приложение которое будет работать на вас!
+            </p>
+        </div>
+    </div>
+
+                                <div class="copyright-text">
+                                    © 2000-2020 Progi.pro. Вся информация представлена «как есть», все права защищены.
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--/.row-->
+                </div><!--/.container-->
+
+                
+
+                
+                
+<script type="text/javascript">
+new Image().src = "//counter.yadro.ru/hit?r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";h"+escape(document.title.substring(0,150))+
+";"+Math.random();</script>
+                
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-70257660-5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-70257660-5');
+</script>
+
+            </div>
+
+            
+                <div id='login-tooltip' class="tip">
+    <div class="inner">
+        Чтобы <span class="login-to">задавать вопросы</span>, пожалуйста,<br><span class="login-link-place"></span>
+        <a href="#" class="glyphicon glyphicon-remove fold"></a>
+    </div>
+</div>
+            
+            
+<div id='claiming-tooltip' class="tip">
+    <div class="inner">
+        Выберите тему жалобы:
+        <br>
+        <div id="claiming-tooltip-claiming-link" class="switch">Авторство текста</div>
+        <br>
+        <div data-url="L2ZlZWRiYWNr" class="b64-nav">Другая проблема</div>
+        <a href="#" class="glyphicon glyphicon-remove fold"></a>
+    </div>
+</div>
+
+        
+    
+    </body>
+</html>
+
+

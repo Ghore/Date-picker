@@ -30,7 +30,7 @@ function CreateModal({ currentMonth, selectedDay, handleClose }) {
           <h3>Days</h3>
           <p>{selectedDay}</p>
           <button onClick={handleClose} className="btnClose">
-            close
+            X
           </button>
         </ModalBody>
       </ModalDialog>
